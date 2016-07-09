@@ -32,6 +32,6 @@ describe('title page', function() {
     browser.fill('new_task', 'call grandma');
     browser.pressButton('submit');
     browser.pressButton('complete');
-    browser.assert.hasClass('li', 'completed');
+    browser.assert.hasClass('li', 'incomplete');
   });
 });
